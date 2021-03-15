@@ -13,8 +13,8 @@ import java.util.stream.Collectors;
 
 public class BackToStockServiceImpl implements BackToStockService {
 
-    private OutOfStockInfoFactory outOfStockInfoFactory = new OutOfStockInfoFactory();
-    private List<OutOfStockInfo> outOfStockInfoList = new ArrayList<>();
+    private final OutOfStockInfoFactory outOfStockInfoFactory = new OutOfStockInfoFactory();
+    private final List<OutOfStockInfo> outOfStockInfoList = new ArrayList<>();
 
     @Override
     public void subscribe(User user, Product product) {
