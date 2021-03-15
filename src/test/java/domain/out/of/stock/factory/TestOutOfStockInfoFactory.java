@@ -13,8 +13,8 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class TestOutOfStockInfoFactory {
 
-    private OutOfStockInfoFactory outOfStockInfoFactory = new OutOfStockInfoFactory();
-    private Product product = new Product("1", ProductCategory.MEDICAL);
+    private final OutOfStockInfoFactory outOfStockInfoFactory = new OutOfStockInfoFactory();
+    private final Product product = new Product("1", ProductCategory.MEDICAL);
 
     @Test
     public void testCreateOutOfStockInfoWhenUserIsPremiumWillReturnPremiumPriority() {
