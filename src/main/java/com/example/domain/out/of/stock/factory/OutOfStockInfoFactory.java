@@ -26,11 +26,7 @@ public class OutOfStockInfoFactory {
         }
 
         if (user.getAge() > 70) {
-            if (productCategory == ProductCategory.MEDICAL) {
-                return HIGH;
-            }
-
-            return MEDIUM;
+            return productCategory == ProductCategory.MEDICAL ? HIGH : MEDIUM;
         }
 
         return NORMAL;
