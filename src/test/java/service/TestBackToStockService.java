@@ -8,7 +8,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -16,14 +15,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TestBackToStockService {
 
-    private static BackToStockServiceImpl backToStockService = new BackToStockServiceImpl();
-    private static List<User> userList = new ArrayList<>();
-    private static Product product = new Product("1", ProductCategory.BOOKS);
-    private static Product product1 = new Product("2", ProductCategory.MEDICAL);
+    private static final BackToStockServiceImpl backToStockService = new BackToStockServiceImpl();
+    private static final List<User> userList = new ArrayList<>();
+    private static final Product product = new Product("1", ProductCategory.BOOKS);
+    private static final Product product1 = new Product("2", ProductCategory.MEDICAL);
 
     @BeforeAll
     public static void setup() {
-        User user = new User("Dmitro", true, 10);
+        User user = new User("Dmitrii", true, 10);
         User user1 = new User("Yurii", true, 80);
         User user2 = new User("Artur", false, 71);
         User user3 = new User("Viktor", false, 50);
